@@ -1,0 +1,265 @@
+/*body styling*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0B2C3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+#mainNav {
+    width: 100dvw;
+    background-color: #858D71;
+    position: fixed;
+    top: 0;
+    padding: 0.5em 0; /* Ensure padding is only vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Keeps the navbar above other content */
+}
+
+#mainNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#mainNav ul li {
+    margin: 0 1em; /* Horizontal space between menu items */
+}
+
+#mainNav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0B2C3D;
+    padding: 0.5em 1em; /* Add padding for clickable area */
+    transition: color 0.3s ease;
+}
+
+#mainNav ul li a:hover {
+    color: #000000;
+}
+
+/* Container that holds all three **/
+#containerAll {
+    display: flex;
+    justify-content: space-between; 
+    gap: 2em; 
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto; 
+    height: 80vh; 
+}
+
+/* Each individual container inside #containerAll */
+#containerInner {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    flex: 1; 
+    background-color: #858D71; 
+    padding: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 30em;
+    height: 100%; 
+    
+}
+/* Title style8*/ 
+h1#Home {
+    text-align: center;
+    font-size: 1.5em;
+    color:#0B2C3D;
+    margin-bottom: 20px; 
+}
+
+/* Style for label elements */
+label {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #0B2C3D;
+    font-weight: bold;
+}
+
+/* Style for input fields */
+input[type = "number"] {
+    padding: 10px;
+    margin-left: 2em ;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Button styles */
+#button {
+    padding: 5px 10px;
+    background-color: #34ca39;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* check button hover effect*/
+#button:hover {
+    background-color: #13c01b;
+}
+
+#btn {
+    padding: 5px 10px;
+    background-color: #34ca39;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* check button hover effect*/
+#btn:hover {
+    background-color: #13c01b;
+}
+
+
+#button1 {
+    padding: 5px 10px;
+    background-color: #34ca39;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* check button hover effect*/
+#button1:hover {
+    background-color: #0d7512;
+}
+
+
+#button2 {
+    padding: 5px 10px;
+    background-color: #34ca39;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* check button hover effect*/
+#button2:hover {
+    background-color: #08b811;
+}
+
+/* Result div style */
+
+#result1 {
+    
+    margin-top: 20px;
+    margin: 2em auto;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    color: azure;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align:center;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+#result2 {
+    
+    margin-top: 20px;
+    margin: 2em auto;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    color: azure;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align:center ;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+#result3 {
+    
+    margin-top: 20px;
+    margin: 2em auto;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    color: azure;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align:center ;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    #containerAll {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerInner {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 1em;
+    }
+    button {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #mainNav ul li a {
+        font-size: 1em;
+    }
+
+    .containerInner h1 {
+        font-size: 1.2em;
+    }
+
+    input[type="number"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    .result-box {
+        font-size: 0.9em;
+    }
+}

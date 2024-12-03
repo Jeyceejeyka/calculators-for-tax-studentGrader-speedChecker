@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Salary ,speed and grade checker calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav id="mainNav">
+        <ul>
+            <li class="logo"><a href="#Home">Net  Salary  Calculator</a></li>
+            <li class="logo"><a href="#Home">Student  Grade  Generator</a></li>
+            <li class="logo"><a href="#Home">Speed  Detector</a></li>
+            
+        </ul>
+    </nav>
+    <div id="containerAll">
+                <!--div container containing labels, inputs buttons and result div for net salary calculator-->
+                <div id="containerInner">
+                    <h1 id="Home">Net Salary Calculator</h1>
+                    <label for="BasicSalary">Enter Your Basic Salary Below:<input id="BasicSalary" type="number" name="BasicSalary" placeholder="Enter Amount In Shillings" /></label>
+                    <label for="Benefits">Enter Your Benefits Below:<input id="Benefits" type="number" name="Benefits" placeholder="Enter Amount In Shillings" /></label>
+                    <button id="btn" type="button">Reset</button>
+                    <button id="button">Calculate Net Salary</button>
+                    <div id="result1"></div>
+                </div>
+                <!--Div container containing th input element check button and  also for student Grade Generator-->
+                <div id="containerInner">
+                    <h1 id="Home">Student Grade Generator</h1>
+                    <div></div>
+                    <input type="number" id="input1" placeholder="Enter marks" />
+                    <div></div>
+                    <button id="button1">Check Grade</button>
+                    <div id="result2"></div>
+                </div>
+                <!-- Div container the input element check button and where the result is showed plus also is the speed detector div-->
+                <div id="containerInner">
+                    <h1 id="Home">Speed Detector</h1>
+                    <div></div>
+                    <input type="number" id="input2" placeholder="Enter Speed in KM/s" />
+                    <div></div>
+                    <button id="button2">Check Speed</button>
+                    <div id="result3"></div>
+                </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
